@@ -6,7 +6,7 @@ import Result from './result';
 function App() {
   return (
     <div className='heading card '>
-      <h1 className='text-info text-center p-3 m-2'>
+      <h1 className='text-info text-center p-1 m-2'>
         <i className='fa fa-calculator'></i>  Calculator</h1>
       <hr />
       <Calculate />
