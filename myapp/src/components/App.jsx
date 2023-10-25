@@ -1,9 +1,9 @@
 import React from 'react';
-import Title from './title';
-import Content from './content';
+import Title from './Title';
+import {Content} from './Content';
 
 
-function app() {
+function App() {
     return (
         <div>
             <p> (from app.jsx)</p>
@@ -12,4 +12,4 @@ function app() {
         </div>);
 }
 
-export default app;
+export default App;

@@ -4,9 +4,9 @@ import React from 'react';
 //     return (<p>Hi, this is the content ..(content.jsx).</p>);
 // }
 
-const content = () => {
+export const Content = () => {
     return (<p>Hi, this is the content ..(content.jsx).</p>);
 
 }
 
-export default content; 
+// export default content; 

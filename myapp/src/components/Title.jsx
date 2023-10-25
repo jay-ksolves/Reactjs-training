@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-function title() {
+function Title() {
     const name = "Jay Prakash";
     const spacing = {
         letterSpacing: '0.3rem'
@@ -32,4 +32,4 @@ function title() {
         </div>);
 }
 
-export default title;
+export default Title;
