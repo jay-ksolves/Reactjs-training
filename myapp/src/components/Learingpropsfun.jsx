@@ -5,8 +5,7 @@ const Learningpropsfun = (props) => {
             <h1>Learning props in function
                 <br />
                 <p> {props.name}</p></h1>
-            {props.children
-            }
+            {props.children}
         </div>
     );
 }
