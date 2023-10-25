@@ -6,7 +6,7 @@ import Learningpropsfun from './Learingpropsfun';
 import Learingpropsclass from './Learningpropsclass';
 import Learningstate from './Learningstate';
 import Count from './Count';
-
+import Event from './Event';
 function App() {
     return (
         <div>
@@ -29,7 +29,8 @@ function App() {
             <Learningstate />
             <hr />
             <Count />
+            <hr />
+            <Event />
         </div>);
 }
-
 export default App;
