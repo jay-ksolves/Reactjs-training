@@ -5,6 +5,7 @@ import Comment from './Comment';
 import Learningpropsfun from './Learingpropsfun';
 import Learingpropsclass from './Learningpropsclass';
 import Learningstate from './Learningstate';
+import Count from './Count';
 
 function App() {
     return (
@@ -26,6 +27,8 @@ function App() {
 
             <hr />
             <Learningstate />
+            <hr />
+            <Count />
         </div>);
 }
 
