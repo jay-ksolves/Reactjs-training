@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from './Title';
-import {Content} from './Content';
-
+import { Content } from './Content';
+import Comment from './Comment';
 
 function App() {
     return (
@@ -9,6 +9,7 @@ function App() {
             <p> (from app.jsx)</p>
             <Title />
             <Content />
+            <Comment />
         </div>);
 }
 
