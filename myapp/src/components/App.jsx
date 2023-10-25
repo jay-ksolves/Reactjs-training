@@ -4,6 +4,7 @@ import { Content } from './Content';
 import Comment from './Comment';
 import Learningpropsfun from './Learingpropsfun';
 import Learingpropsclass from './Learningpropsclass';
+import Learningstate from './Learningstate';
 
 function App() {
     return (
@@ -22,6 +23,9 @@ function App() {
             <Learingpropsclass name=" --this line in a prob object in for class component" >
                 <p>This is a chlidern prop in learniing props in Class Component</p>
             </Learingpropsclass>
+
+            <hr />
+            <Learningstate />
         </div>);
 }
 

@@ -11,7 +11,7 @@ class Learingpropsclass extends Component {
                 </h1>
                 <p> {this.props.name}</p>
                 <p>{this.props.children}</p>
-                
+
             </div>
         );
     }
