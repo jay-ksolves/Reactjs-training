@@ -15,7 +15,7 @@ function App() {
             <Content />
             <Comment />
             <hr />
-            <Learningpropsfun name="  ---Hlw this is a prop (object)--">
+            <Learningpropsfun name="  ---Hlw this is a prop (object)--" heroName="Hulk">
                 <p>THis is a children prop in Learning props in functional components</p>
                 <p>this and above line are called o render by passing props.children</p>
             </Learningpropsfun>
