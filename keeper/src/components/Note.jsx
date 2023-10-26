@@ -9,7 +9,7 @@ function Note(props) {
 
 
     return (
-        <div className='note'>
+        <div className='note p-4 m-4'>
             {/* <p>{props.key}</p> */}
             <h1>{props.title}</h1>
             <p>{props.content}</p>

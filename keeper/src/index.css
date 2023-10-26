@@ -7,7 +7,8 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 body {
-  background: #eee;
+  /* background: #eee; */
+  background-color: rgb(0, 0, 0);
   padding: 0 16px;
 }
 
@@ -36,16 +37,18 @@ footer p {
   color: #ccc;
 }
 .note {
-  background: #fff;
+  background: #2c2727;
   border-radius: 7px;
-  box-shadow: 0 2px 5px #ccc;
+  box-shadow: 0 2px 5px #039996;
   padding: 10px;
   width: 240px;
+  color: #f5ba13;
   margin: 16px;
   float: left;
+  border-bottom-color: aqua;
 }
 .note h1 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   margin-bottom: 6px;
 }
 .note p {
@@ -74,7 +77,7 @@ form {
   background: #fff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 5px 5px rgb(10, 89, 125);
 }
 form input,
 form textarea {
