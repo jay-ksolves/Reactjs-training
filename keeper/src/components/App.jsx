@@ -33,14 +33,25 @@ function App() {
       <Navbar />
       {/* {notes.map(createNotes())} */}
       <CreateNote onAdd={addNote} />
-      {notes.map(noteItem => (
+      {/* {notes.map(noteItem => (
         <Note
           key={noteItem.key}
           title={noteItem.title}
           content={noteItem.content}
-          onDelete={deleteNote}
         />
-      ))}
+      ))} */}
+
+      {notes.map((noteItem, index) => {
+        return (
+          <Note
+            key={index}
+            id={index}
+            title={noteItem.title}
+            content={noteItem.content}
+            onDelete={deleteNote}
+          />
+        );
+      })}
       <Footer />
     </div>
   );
