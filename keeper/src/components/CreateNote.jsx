@@ -1,7 +1,10 @@
 import { useState } from 'react';
+import AddIcon from '@mui/icons-material/Add';
+// import Fab from '@mui/material/Fab';
+// import Zoom from '@mui/material/Zoom';
 
 function CreateNote(props) {
-
+    const [isExpanded, setExpanded] = useState(false);
     const [note, setNote] = useState({
         title: "",
         content: ""
@@ -23,7 +26,7 @@ function CreateNote(props) {
         event.preventDefault();
 
         if (note.title.trim() === "" || note.content.trim() === "") {
-            seterrorMessage("Error Please provide input");
+            seterrorMessage("Error! Please provide input");
             setCompletionMessage("");
             return;
         }
@@ -42,17 +45,22 @@ function CreateNote(props) {
         }, 2000);
     }
 
+    function expand() {
+        setExpanded(true);
+    }
     return (
         <div>
             <form>
                 <p className='text-center text-warning fa fa-pen fa-solid text-lg' style={{ letterSpacing: "0.1em", fontSize: "1.6em" }}>Create Note</p>
-                <input name="title" className='' value={note.title} placeholder='Title' onChange={handleChange} rows="2" />
-                <textarea name="content" className='' value={note.content} placeholder='Take a note' onChange={handleChange} rows="3" />
-                <button onClick={submitNote} className='fas'>Add</button>
+
+                {isExpanded && (<input name="title" className='' value={note.title} placeholder='Title' onChange={handleChange} rows="" />)}
+                <textarea onClick={expand} name="content" className='text-primary' value={note.content} placeholder='Take a note' onChange={handleChange} rows={isExpanded ? 3 : 1} />
+                {isExpanded && (<button onClick={submitNote} className='fas'><AddIcon /> </button>)}
             </form>
-            {errorMessage && <div className=" fa text-danger text-center" style={{ letterSpacing: "0.1em", fontSize: "1.6em" }}>  {errorMessage}</div>}
-            {completionMessage && <div className="fa text-success text-center" style={{ letterSpacing: "0.1em", fontSize: "1.6em" }}>{completionMessage}</div>}
-        </div>
+            <div className='text-center'>
+                {errorMessage && <div className=" fa text-danger text-center  p-2" style={{ letterSpacing: "0.1em", fontSize: "1.6em", borderRadius: "20px" }}>  {errorMessage}</div>}
+                {completionMessage && <div className="fa text-success text-center p-2" style={{ letterSpacing: "0.1em", fontSize: "1.6em" }}>{completionMessage}</div>}
+            </div></div>
     )
 }
 
