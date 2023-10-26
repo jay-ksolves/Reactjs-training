@@ -37,11 +37,11 @@
 import React, { useState } from 'react';
 function App() {
 
-  const [headingText, setHeading] = useState("hello");
+  // const [headingText, setHeading] = useState("hello");
   const [buttonText, setButton] = useState("Submit");
   const [isMousedOver, setMouseOver] = useState(false);
-
   const [name, setName] = useState("");
+  const [headingText, setHeading] = useState("Hello ");
 
 
   function handleChange(event) {
@@ -50,12 +50,18 @@ function App() {
   }
 
 
-  function clicked() {
-    console.log("you clicked");
-    setHeading('submitted');
-    setButton('Already Submitted');
-  }
+  // function clicked() {
+  //   console.log("you clicked");
+  //   setHeading('submitted');
+  //   setButton('Submitted');
 
+  // }
+
+  function changeHeading(event) {
+    setHeading("Welcome " + event.target.value);
+    setButton('Submitted');
+    event.preventDefault();
+  }
   function handleMouseOver() {
     setMouseOver(true);
   }
@@ -68,10 +74,13 @@ function App() {
   return (
     <div className='container '>
       <h1>
-        {headingText} {name}
+        {headingText}
+        {name}
       </h1>
-      <input onChange={handleChange} className=''></input>
-      <button onClick={clicked} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ backgroundColor: isMousedOver ? "black" : "white" }}>{buttonText}</button>
+      <input onChange={handleChange} className='' placeholder='Enter Your name'></input>
+      {/* <button onClick={clicked } onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ backgroundColor: isMousedOver ? "black" : "white" }}>{buttonText}</button> */}
+      <button onClick={changeHeading} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ backgroundColor: isMousedOver ? "black" : "white" }}>{buttonText}</button>
+
     </div>
   );
 }
