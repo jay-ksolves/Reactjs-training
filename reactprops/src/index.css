@@ -17,7 +17,8 @@ body {
 .card {
   border-radius: 25px;
 
-  padding: 25px 15px;
+  /* padding: 25px 15px; */
+
   background-color: #81ecec;
   margin: 50px 0;
 
@@ -62,4 +63,5 @@ body {
 .info {
   margin: 20px 0;
   color: #1a7e76;
+  padding-left: 20px;
 }

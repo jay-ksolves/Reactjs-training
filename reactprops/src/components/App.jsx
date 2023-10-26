@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <h1>Contacts</h1>
-
+      <hr />
       <div className='mx-auto justify-content-center d-flex flex-wrap gap-4' >
         {contacts.map(contactItem => (
           <Contact
