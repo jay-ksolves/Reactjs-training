@@ -39,9 +39,15 @@ function App() {
 
   const [headingText, setHeading] = useState("hello");
   const [buttonText, setButton] = useState("Submit");
-    const [isMousedOver, setMouseOver] = useState(false);
+  const [isMousedOver, setMouseOver] = useState(false);
+
+  const [name, setName] = useState("");
 
 
+  function handleChange(event) {
+    console.log(event.target.value);
+    setName(event.target.value);
+  }
 
 
   function clicked() {
@@ -50,7 +56,7 @@ function App() {
     setButton('Already Submitted');
   }
 
-   function handleMouseOver() {
+  function handleMouseOver() {
     setMouseOver(true);
   }
 
@@ -62,9 +68,9 @@ function App() {
   return (
     <div className='container '>
       <h1>
-        {headingText}
+        {headingText} {name}
       </h1>
-      <input className=''></input>
+      <input onChange={handleChange} className=''></input>
       <button onClick={clicked} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} style={{ backgroundColor: isMousedOver ? "black" : "white" }}>{buttonText}</button>
     </div>
   );
