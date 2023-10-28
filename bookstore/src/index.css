@@ -129,8 +129,8 @@ a .mainbox {
 }
 
 .book-img {
-  width: 110%;
-  /* max-width: 600px; */
+  width: 100%;
+  max-width: 200px;
   border-radius: 3px;
   transition: transform 1s;
   margin: 1.5em;

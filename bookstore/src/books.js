@@ -32,6 +32,46 @@ const booksData = [
         description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
         imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
     },
+    {
+        id: 5,
+        name: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        rating: '4.27',
+        description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
+        imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
+    },
+    {
+        id: 6,
+        name: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        rating: '4.27',
+        description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
+        imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
+    },
+    {
+        id: 4,
+        name: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        rating: '4.27',
+        description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
+        imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
+    },
+    {
+        id: 7,
+        name: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        rating: '4.27',
+        description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
+        imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
+    },
+    {
+        id: 8,
+        name: 'Pride and Prejudice',
+        author: 'Jane Austen',
+        rating: '4.27',
+        description: 'A beloved classic novel that explores themes of love, marriage, and social class in 19th-century England.',
+        imageUrl: 'https://m.media-amazon.com/images/I/71GOD1Bl-jL._AC_UY218_.jpg',
+    },
 ];
 
 export default booksData;
