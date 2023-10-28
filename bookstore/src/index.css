@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Lato");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Lato", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.fullcontent {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  padding: 6% 10% 5% 10%;
+  background-image: url(https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://images.unsplash.com/photo-1618365908648-e71bd5716cba?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: flex;
+  flex-direction: row;
+}
+.headings {
+  flex-basis: 65%;
+  margin-right: 5%;
+}
+.headings h1 {
+  font-size: 4rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  margin: 3% 0% 3% 0%;
+}
+.headings h2 {
+  font-size: 1.7rem;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+}
+.formbox {
+  background: rgb(34, 43, 49, 0.8);
+  color: white;
+  flex-basis: 35%;
+  border-top: 10px solid #34e7e4;
+  padding: 8% 3%;
+}
+.formbox * {
+  margin: 0;
+}
+.formbox h3 {
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.formbox form label {
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 0.3rem;
+}
+.formbox form .asd {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  background: transparent;
+  height: 2.8rem;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  color: #0fbcf9;
+}
+form .mainbox {
+  color: white;
+  box-shadow: none;
+  background: #34e7e4;
+  height: 2.8rem;
+  display: block;
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-size: 1.1rem;
+}
+a .mainbox {
+  margin: 0;
+  padding: 2%;
+}
