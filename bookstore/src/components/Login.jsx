@@ -13,9 +13,9 @@ function Login() {
                     <input type="text" name="username" className="asd form-control" placeholder='Username' />
                     <label for="">Password</label>
                     <input type="password" id="" name="password" className="asd form-control" placeholder='Password'/>
-                    <input id="btn" type="submit" name="submit" value="Log In" className="mainbox form-control" />
+                    <input id="btn" type="submit" name="submit" value="Log In" className="mainbox form-control " />
                     <label for="">New customer?</label>
-                    <a href="register.html" className="mainbox form-control">Register Now</a>
+                    <a href="register.html" className="mainbox form-control float-shadow">Register Now</a>
                 </form>
             </div>
         </div>

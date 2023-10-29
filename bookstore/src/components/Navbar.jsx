@@ -19,14 +19,14 @@ function Navbar({ searchTerm, setSearchTerm }) {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link to="/home" className='nav-link text-light'>Home</Link>
+                                <Link to="/home" className='nav-link text-light float-shadow'>Home</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link to="/about" className='nav-link text-light'>About Us</Link>
+                                <Link to="/about" className='nav-link text-light float-shadow'>About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/login" className='nav-link text-light'>Login</Link>
+                                <Link to="/login" className='nav-link text-light float-shadow'>Login</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">
@@ -38,7 +38,7 @@ function Navbar({ searchTerm, setSearchTerm }) {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
-                            <button className="btn btn-info" type="button" onClick={handleSearch}>
+                            <button className="btn btn-info float-shadow" type="button" onClick={handleSearch}>
                                 Search
                             </button>
                         </form>

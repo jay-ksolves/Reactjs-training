@@ -16,7 +16,7 @@ function Book(props) {
 
     return (
         <>
-            <div className="books m-3">
+            <div className="books m-3 serviceBox">
                 {/* <img src={props.imageUrl} alt="" className="book-img" /> */}
                 {/* <img src={props.imageUrl || 'placeholder-image-url'} alt="" className="book-img" /> */}
                 {props.imageUrl && (
@@ -29,7 +29,8 @@ function Book(props) {
                     {/* <h3 className="rating">{props.rating}</h3> */}
                     {/* <p className="info">{props.description}</p> */}
                     <p className="info">{truncateDescription(props.description, 10)}</p>
-                    <button type="submit" onClick={props.onSeeBook}>See the Book</button>
+                    {/* <button type="submit" onClick={props.onSeeBook}>See the Book</button> */}
+                    <button type="submit" onClick={() => props.onSeeBook(props)} className='btn btn-light float-shadow'>See the Book</button>
                 </div>
             </div>
 

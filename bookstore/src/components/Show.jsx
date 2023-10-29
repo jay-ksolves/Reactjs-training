@@ -7,34 +7,34 @@ import Seebook from './Seebook';
 
 function Show() {
     const [books, setBooks] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('Swami');
-    const [showBook, setShowBook] = useState(false);
+    const [searchTerm, setSearchTerm] = useState('Ruby on Rails');
+    const [showBook, setShowBook] = useState(null);
     useEffect(() => {
         fetchBooks(searchTerm);
     }, [searchTerm]);
 
-    const fetchBooks = async (query) => {
+    const fetchBooks = async (query, startIndex = 0) => {
         try {
             const response = await axios.get(
-                `https://www.googleapis.com/books/v1/volumes?q=${query}&key=AIzaSyAQUSJIORRBPqDICaizLvyianWkK0IrkAQ`
+                `https://www.googleapis.com/books/v1/volumes?q=${query}&startIndex=${startIndex}&maxResults=20&key=AIzaSyAQUSJIORRBPqDICaizLvyianWkK0IrkAQ`
             );
             setBooks(response.data.items);
+
+            // const newBooks = response.data.items;
+            // setBooks((prevBooks) => [...prevBooks, ...newBooks]);
         } catch (error) {
             console.log(error);
             setBooks([]);
         }
     };
-
-    function handleSeeBook() {
+    function handleSeeBook(book) {
         console.log("See the Book");
-        setShowBook(true);
+        setShowBook(book);
     }
-      
-
     return (
         <>
             <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-            <div className='container mx-auto d-flex flex-wrap p-3'>
+            <div className='container mx-auto d-flex flex-wrap p-3 '>
                 {books && books.map((book) => (
                     <Book
                         key={book.id}
@@ -43,13 +43,13 @@ function Show() {
                         // rating={book.volumeInfo.rating || 'N/A'}
                         description={book.volumeInfo.description || 'No description available'}
                         imageUrl={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 'No Image available'}
-                        onSeeBook={handleSeeBook}
+                       onSeeBook={() => handleSeeBook(book)}
                     />
                 ))}
             </div>
             <Footer />
 
-            {showBook && <Seebook />}
+            {showBook && <Seebook book={showBook}/>}
         </>
     );
 }
