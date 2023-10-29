@@ -40,7 +40,7 @@ function App() {
   // const [headingText, setHeading] = useState("hello");
   const [buttonText, setButton] = useState("Submit");
   const [isMousedOver, setMouseOver] = useState(false);
-  const [name, setName] = useState("");
+  const [name, setName] = useState("user");
   const [headingText, setHeading] = useState("Hello ");
 
 

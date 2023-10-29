@@ -196,10 +196,4 @@ footer p {
   color: #ccc;
 }
 
-.error img {
-  background: fixed;
-  max-width: 1600;
-  background-repeat: no-repeat;
-  backface-visibility: visible;
-  /* background-color: linear-gradient(-225deg, #3e336d, #3584a7 51%, #30d2be); */
-}
+
