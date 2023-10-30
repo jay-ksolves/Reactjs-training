@@ -39,6 +39,7 @@ function Seebook({ book }) {
             <div className="card-body">
                 <h5 className="card-title">{book.name}</h5>
                 <p className="card-text">{book.author}</p>
+                <p className="card-text">{book.rating}</p>
                 <p className="card-text">{book.description}</p>
             </div>
         </div>

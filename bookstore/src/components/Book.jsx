@@ -32,7 +32,7 @@ function Book(props) {
                 <div className="descp">
                     <h2 className="book-name">{props.name}</h2>
                     <h3 className="author">by {props.author}</h3>
-                    {/* <h3 className="rating">{props.rating}</h3> */}
+                    {/* <h3 className="rating">Rating: {props.rating}</h3> */}
                     {/* <p className="info">{props.description}</p> */}
                     <p className="info"> Description: {truncateDescription(props.description, 10)}</p>
                     {/* <button type="submit" onClick={props.onSeeBook}>See the Book</button> */}

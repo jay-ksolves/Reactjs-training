@@ -6,6 +6,7 @@ import Show from './Show';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './Profile';
 import { AuthProvider } from './auth';
+import { RequireAuth } from './RequireAuth';
 const LazyAbout = React.lazy(() => import('./About'));
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <LazyAbout />
           </React.Suspense>}></Route>
           <Route path='/' element={<Login />} ></Route>
-          <Route path='/profile' element={<Profile />} ></Route>
+          <Route path='/profile' element={<RequireAuth><Profile /></RequireAuth>}></Route>
           <Route path='*' element={<Error />} ></Route>
         </Routes>
       </BrowserRouter>

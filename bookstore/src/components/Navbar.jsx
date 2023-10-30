@@ -34,7 +34,6 @@ function Navbar({ searchTerm, setSearchTerm }) {
                                     !auth.user && <Link to="/login" className='nav-link text-light float-shadow'>Login</Link>
                                 }
 
-
                             </li>
                             <li className="nav-item">
                                 <Link to="/profile" className='nav-link text-light float-shadow'><i className='fa fa-user' />  Profile</Link>

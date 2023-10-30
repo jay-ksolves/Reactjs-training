@@ -11,7 +11,7 @@ function Login() {
 
     const handleLogin = () => {
         auth.login(user)
-        navigate('/home')
+        navigate('/home',{replace: true})
     }
     return (
         <>
