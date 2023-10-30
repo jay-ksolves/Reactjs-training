@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { useAuth } from './auth';
 
 function Navbar({ searchTerm, setSearchTerm }) {
     const handleSearch = () => {
         setSearchTerm(searchTerm);
     };
+    const auth = useAuth()
 
     return (
         <>
@@ -26,7 +28,16 @@ function Navbar({ searchTerm, setSearchTerm }) {
                                 <Link to="/about" className='nav-link text-light float-shadow'>About Us</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/login" className='nav-link text-light float-shadow'>Login</Link>
+
+
+                                {
+                                    !auth.user && <Link to="/login" className='nav-link text-light float-shadow'>Login</Link>
+                                }
+
+
+                            </li>
+                            <li className="nav-item">
+                                <Link to="/profile" className='nav-link text-light float-shadow'><i className='fa fa-user' />  Profile</Link>
                             </li>
                         </ul>
                         <form className="d-flex" role="search">

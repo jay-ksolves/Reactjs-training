@@ -31,6 +31,9 @@ function Show() {
         console.log("See the Book");
         setShowBook(book);
     }
+
+
+
     return (
         <>
             <Navbar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -43,13 +46,14 @@ function Show() {
                         // rating={book.volumeInfo.rating || 'N/A'}
                         description={book.volumeInfo.description || 'No description available'}
                         imageUrl={book.volumeInfo.imageLinks ? book.volumeInfo.imageLinks.thumbnail : 'No Image available'}
-                       onSeeBook={() => handleSeeBook(book)}
+                        onSeeBook={() => handleSeeBook(book)}
+                        previewLink={book.volumeInfo.previewLink}
                     />
                 ))}
             </div>
             <Footer />
 
-            {showBook && <Seebook book={showBook}/>}
+            {showBook && <Seebook book={showBook} />}
         </>
     );
 }

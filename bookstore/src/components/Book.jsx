@@ -14,6 +14,12 @@ function Book(props) {
         return description;
     };
 
+    const openPreviewLink = () => {
+        if (props.previewLink) {
+            window.open(props.previewLink, '_blank');
+        }
+    };
+
     return (
         <>
             <div className="books m-3 serviceBox">
@@ -30,7 +36,10 @@ function Book(props) {
                     {/* <p className="info">{props.description}</p> */}
                     <p className="info"> Description: {truncateDescription(props.description, 10)}</p>
                     {/* <button type="submit" onClick={props.onSeeBook}>See the Book</button> */}
-                    <button type="submit" onClick={() => props.onSeeBook(props)} className='btn btn-light float-shadow'>See the Book</button>
+                    <div className='d-grid'>
+                        <button type="submit" onClick={() => props.onSeeBook(props)} className='btn btn-light float-shadow'>See Book Info</button>
+                        <button type="button" onClick={openPreviewLink} className='btn btn-light float-shadow'>Preview Book</button>
+                    </div>
                 </div>
             </div>
 
