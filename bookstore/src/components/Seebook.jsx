@@ -32,6 +32,9 @@ import React from 'react';
 function Seebook({ book }) {
     return (
         <div className="card container text-dark">
+        <br/>
+        <h1  className= "text-center" style={{fontFamily:"lobster"}}>Book Details</h1>
+        <hr style={{color:"cyan"}}/>
             <img src={book.imageUrl} alt={book.name} />
             <div className="card-body">
                 <h5 className="card-title">{book.name}</h5>

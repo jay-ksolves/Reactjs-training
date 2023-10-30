@@ -7,7 +7,7 @@ import Seebook from './Seebook';
 
 function Show() {
     const [books, setBooks] = useState([]);
-    const [searchTerm, setSearchTerm] = useState('Ruby on Rails');
+    const [searchTerm, setSearchTerm] = useState('React');
     const [showBook, setShowBook] = useState(null);
     useEffect(() => {
         fetchBooks(searchTerm);
