@@ -3,18 +3,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from './Footer';
 // import Navbar from './Navbar';
+// import Navbar from './Navbar';
 
 function About() {
     return (
         <>
-            {/* <Navbar/> */}
-            <div className='container p-5 '>
-                <Link to="/home" style={{ textDecoration: 'none' }} className="float-shadow"> 🏠 Home</Link>
-                <br />
-                <br />
-                <br />
+            {/* <Navbar />  */}
+            <br />
+            <div className='container card p-4 '>
+
+               
                 <div>
-                    <h2 style={{ fontFamily: 'lobster' }}>About Us</h2>
+                    <h2 style={{ fontFamily: 'lobster' }} className='text-center'>About Us</h2>
+                    <hr></hr>
                     <p>
                         Welcome to Read Rave, where our passion for literature meets the digital age. We're more than just an online book store; we're your gateway to a world of stories, imagination, and endless possibilities.
                     </p>
@@ -45,8 +46,11 @@ function About() {
                 </div>
 
                 <p>Thank you for choosing Read Rave. We look forward to being your trusted companion in your reading adventures.</p>
+                <Link to="/home" style={{ textDecoration: 'none' }} className="float-shadow text-center"> 🏠 Home</Link>
+        
+            
             </div>
-            <Footer/>
+            <Footer />
         </>
     );
 }

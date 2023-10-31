@@ -5,7 +5,7 @@ function Sidecontent() {
         <>
             <div className="headings">
                 <h1 className=''>
-                    <i class="fa-solid fa-book-open-reader" style={{ color: "#f4f5f5" }} />  Read Rave</h1>
+                    <i className="fa-solid fa-book-open-reader" style={{ color: "#f4f5f5" }} />  Read Rave</h1>
                 <h2>
                     Read, relax, repeat. At Read Rave,
                     it's all about fueling your love for literature and

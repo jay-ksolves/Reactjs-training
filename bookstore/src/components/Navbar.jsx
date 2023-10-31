@@ -10,7 +10,7 @@ function Navbar({ searchTerm, setSearchTerm }) {
 
     return (
         <>
-            <nav className="navbar navbar-expand-lg text-light" style={{ background: 'linear-gradient(-225deg, #3e336d, #3584a7 51%, #30d2be)' }}>
+            <nav  id ="top" className="navbar navbar-expand-lg text-light" style={{ background: 'linear-gradient(-225deg, #3e336d, #3584a7 51%, #30d2be)' }}>
                 <div className="container-fluid">
                     <Link to="/home" className='nav-link' style={{ letterSpacing: '0em', fontFamily: '', fontSize: '1.5rem', paddingRight: '20px' }}>
                         <i className="fa fa-book-open-reader" style={{ color: "", paddingRight: "10px", letterSpacing: '0.1em' }} /> Read Rave
