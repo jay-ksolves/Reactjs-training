@@ -2,6 +2,7 @@ import React from 'react';
 import Usestate from './Usestate';
 import Useeffect from './Useeffect';
 import CounterCompo from './CounterCompo';
+import DataFetching from './DataFetching';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <br />
       <CounterCompo />
       <br />
+      <DataFetching />
     </div>
   );
 }
