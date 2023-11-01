@@ -1,6 +1,7 @@
 import React from 'react';
 import Usestate from './Usestate';
 import Useeffect from './Useeffect';
+import CounterCompo from './CounterCompo';
 
 
 function App() {
@@ -10,6 +11,10 @@ function App() {
       <Usestate />
       <br />
       <Useeffect />
+
+      <br />
+      <CounterCompo />
+      <br />
     </div>
   );
 }
