@@ -19,7 +19,7 @@ function UseMemoCounter() {
 
     const isEven = () => {
 
-        return counterOne % 2 == 0;
+        return counterOne % 2 === 0;
     }
 
     const isEvenTwo = useMemo(() => {

@@ -4,6 +4,7 @@ import Useeffect from './Useeffect';
 import CounterCompo from './CounterCompo';
 import DataFetching from './DataFetching';
 import UseMemoCounter from './UseMemoCounter';
+import FocusInput from './FocusInput';
 
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
       <DataFetching />
       <br />
       <UseMemoCounter />
+      <br />
+      <FocusInput />
     </div>
   );
 }
