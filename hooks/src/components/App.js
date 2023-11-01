@@ -3,6 +3,7 @@ import Usestate from './Usestate';
 import Useeffect from './Useeffect';
 import CounterCompo from './CounterCompo';
 import DataFetching from './DataFetching';
+import UseMemoCounter from './UseMemoCounter';
 
 
 function App() {
@@ -17,6 +18,8 @@ function App() {
       <CounterCompo />
       <br />
       <DataFetching />
+      <br />
+      <UseMemoCounter />
     </div>
   );
 }
